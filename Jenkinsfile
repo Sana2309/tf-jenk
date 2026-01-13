@@ -15,6 +15,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
+                            git branch: 'main',
                             git "https://github.com/Sana2309/tf-jenk.git"
                         }
                     }
